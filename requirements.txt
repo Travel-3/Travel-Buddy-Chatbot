@@ -1,2 +1,11 @@
 fastapi==0.100.1
 uvicorn[standard]==0.23.2
+langchain==0.0.254
+openai
+python-dotenv
+google-search-results
+flask_cors==3.0.10
+pgvector
+tiktoken
+psycopg2-binary==2.9.3
+jq
