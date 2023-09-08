@@ -52,7 +52,7 @@ def eventsQAStreaming(query: Optional[str] = None):
                 # Assuming each line is a string and you can directly yield it
                 yield line
 
-        return StreamingResponse(generate(), media_type="text/event-stream", headers={"Cache-Control": "no-cache", "Connection": "keep-alive", "Content-Type": "text/event-stream"})
+        return StreamingResponse(generate(), media_type="text/plain", headers={"Cache-Control": "no-cache", "Connection": "keep-alive", "Content-Type": "text/plain"})
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
